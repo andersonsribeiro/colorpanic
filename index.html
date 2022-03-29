@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <title>color panic.</title>
+</head>
+<body>
+    <div id="msg"></div>
+
+    <sidebar>
+        Welcome,
+        <div id="avatar">
+            <span style="background-color: userColor;"></span>
+            <span style="background-color: userColor;"></span>
+            <span style="background-color: userColor;"></span>
+            <span style="background-color: userColor;"></span>
+            <span style="background-color: userColor;"></span>
+            <em>userID</em>
+        </div>
+    </sidebar>
+
+    <session id="stats">
+        <span id="health">†3</span>
+        <span id="coins">0¢</span>
+        <span id="bombs">*3</span>
+        <span id="timer">0</span>
+    </session>
+
+    <div id="board">
+        <span id="player" user="user"></span>
+        <span id="prism"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+        <span class="field tileClass" tile="tileID" style="background-color: tileColor"></span>
+    </div>
+    
+    <session id="controls">
+        <span id="left" onclick="moveLeft()"></span>
+        <span id="down" onclick="moveDown()">\/</span>
+        <span id="up" onclick="moveUp()">/\</span>
+        <span id="right" onclick="moveRight()">></span>
+        <span id="interact" onclick="interact()">*</span>
+    </session>
+
+    <ul id="colors">
+        <li>
+            <span class="color-title">tileName</span>
+            <span class="color" style="background: tileColor;"></span>
+        </li>
+        <li>
+            <span class="color-title">tileName</span>
+            <span class="color" style="background: tileColor;"></span>
+        </li>
+        <li>
+            <span class="color-title">tileName</span>
+            <span class="color" style="background: tileColor;"></span>
+        </li>
+        <li>
+            <span class="color-title">tileName</span>
+            <span class="color" style="background: tileColor;"></span>
+        </li>
+        <li>
+            <span class="color-title">tileName</span>
+            <span class="color" style="background: tileColor;"></span>
+        </li>
+    </ul>
+
+    <section id="ranking">
+        <ul>
+            <li>
+                <h3>RANKING</h3>
+            </li>
+            <li>
+                <span>#0</span>
+                <div id="ranking-avatar">
+                    <span style="background-color: userColor;"></span>
+                    <span style="background-color: userColor;"></span>
+                    <span style="background-color: userColor;"></span>
+                    <span style="background-color: userColor;"></span>
+                    <span style="background-color: userColor;"></span>
+                </div>
+                <span>userID: </span>
+                <span>† health</span>
+                <span>coins ¢</span>
+                <span>time sec</span>
+                <span>date</span>
+            </li>
+        </ul>
+    </section>
+
+    <script type="text/javascript" src="./js/game.js"></script>
+</body>
+</html>
